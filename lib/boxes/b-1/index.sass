@@ -3,7 +3,7 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-boxes-1
+.landingpage-boxes-1
 	background: darken(color-get($mau,trang),5%)
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
@@ -36,15 +36,21 @@
 				+lh(4rem)
 				+fw(200)
 				margin-right: 1rem
-				color: color-get($mau,main)
+				color: darken(color-get($mau,trang),50%)
+				display: block
+				padding-bottom: 1.3rem
 			h3
 				font-weight: 400
 				letter-spacing: 1px
 				+fz(1.3rem)
-				color: color-get($mau,main)
+				color: darken(color-get($mau,trang),50%)
+				padding-bottom: 1.3rem
 			p
 				font-size: 1rem
 				font-weight: 300
 				color: darken(color-get($mau,trang),50%)
 			&:hover
 				background: darken(color-get($mau,trang),2%)
+				.mdi
+					// color: linear-gradient(to top, #f62e71 0%, #f9ab72 100%)
+					color: color-get($mau,main)

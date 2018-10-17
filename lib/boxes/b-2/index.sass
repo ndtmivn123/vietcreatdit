@@ -1,0 +1,53 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.landingpage-boxes-2
+	background: darken(color-get($mau,trang),5%)
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.container
+		.single-service
+			.content
+				position: relative
+				max-width: 400px
+				margin: auto
+				overflow: hidden
+				.content-overlay
+					+pos(abs, 0 0 0 0)
+					opacity: 0
+					left: 0
+					width: 100%
+					+media-breakpoint-up(md)
+						left: 11px
+						width: 94%
+					+media-breakpoint-up(lg)
+						left: 20px
+						width: 90%
+					&:hover
+						
+				.content-details
+					position: absolute
+					text-align: center
+					padding-left: 1em
+					padding-right: 1em
+					width: 100%
+					top: 50%
+					left: 50%
+					opacity: 0
+					transform: translate(-50%, -50%)
+					transition: all 0.3s ease-in-out 0s
+					.content-title
+						font-size: 18px
+						color: #fff
+						font-weight: 500
+				&:hover
+					.content-details
+						top: 50%
+						left: 50%
+						opacity: 1
+					
+			.fadeIn-bottom
+				top: 80%

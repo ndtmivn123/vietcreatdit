@@ -3,19 +3,24 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-form-3
+.landingpage-form-3
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
 	.info
+		+media-breakpoint-up(md)
+			box-shadow: -21.213px 21.213px 30px 0px darken(color-get($mau,trang) ,20%)
+			padding: 100px
 		h3
 			+fz(1.3rem)
 			text-transform: uppercase
+			margin-bottom: 1.5rem
 		.inf
 			+pad(2rem)
 			h2
-				+fz(1.3rem)
-	form
+				+fz(1.3rem)	
+		button
+			margin-top: 1.5rem
 		.has-danger
 			input, textarea, select
 				border-color: color-get($mau,do-1)
