@@ -8,7 +8,7 @@
 	+media-breakpoint-up(lg)
 		+pad(0 0 4rem 0)
 	.container
-		.h1-text
+		.h2-text
 			display: flex
 			justify-content: center
 			align-items: center
@@ -26,25 +26,33 @@
 						position: relative
 						&.item-child
 							min-height: 450px
+						&:before
+							+pos(abs,12rem  null null 25rem 0 0 )
+							width: 100%
+							height: 100%
+							+opacity(.6)
+							content: ''
+							background-image: linear-gradient(to top, color-get($mau,main) 0%, #f9ab72 100%)
+							+transition(all .5s ease-in-out)
+							z-index: 1
 					figcaption
 						.text
 							position: absolute
 							margin-top: -22rem
 							+lh(2.5)
+							+opacity(1)
+							z-index: 999999
 							+pad(1rem)
-							time
-								color: color-get($mau,xam-3)
-								+fz(1rem)
-								+fw(400)
-								padding-bottom: 2rem
 							h3
 								color: color-get($mau,den)
-								+fz(1.1rem)
+								+fz(1.5rem)
 								+fw(bold)
+								color: color-get($mau,trang)
 							p 
 								color: color-get($mau,xam-3)
-								+fz(1.07rem)
+								+fz(1.2rem)
 								line-height: 1.6rem
+								color: color-get($mau,trang)
 							+media-breakpoint-up(md)
 								margin-top: -16rem
 							+media-breakpoint-up(lg)
@@ -73,17 +81,18 @@
 							z-index: 100
 							+pad(1rem)
 							.text
-								+pos(abs, 105%)
+								+pos(abs, 107%)
 								+transition(all .5s ease-in-out)
 								width: 100%
 								h3
-									+fz(1.5rem)
+									+fz(1.4rem)
 									padding-bottom: 3.5rem
 									max-width: calc(100% - 3rem)
 								time
 									max-width: calc(100% - 3rem)
 								p
 									max-width: calc(100% - 3rem)
+									+fz(1.08rem)
 
 					&:hover
 						figure
