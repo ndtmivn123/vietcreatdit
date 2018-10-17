@@ -1,13 +1,13 @@
-section.canhcam-form-3
+section.landingpage-form-3
 	article.container.info
 		.row
 			.col
-				h3.h3 Complete this form to email us your enquiry
+				h3.h3 Điền đơn giải đáp thắc mắc
 				p.mb-4 Quý khách có thể liên hệ với chúng tôi bằng cách điền thông tin vào mẫu dưới. Chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất hoặc gọi điện thoại để được tư vấn.
 
 				form.validator
 					.row
-						.col
+						.col-md-12.col-lg-6
 							.form-group
 								input#name.form-control(type='text', placeholder='Name (*)', data-error="Vui lòng nhập thông tin", required)
 							.form-group
@@ -16,13 +16,14 @@ section.canhcam-form-3
 								input#Phone.form-control(type='text', placeholder='Phone', data-error="Vui lòng nhập thông tin", pattern="^[_A-z0-9]{1,}$", required)
 							.form-group
 								input#sec.form-control(type='text', placeholder='Mã bảo vệ', data-error="Vui lòng nhập thông tin", required)
-							.form-group
-								button.btn.btn-outline-primary.text-uppercase(type="submit")
-									| Submit
 
-						.col
+						.col-md-12.col-lg-6
 							.form-group
 								input#Address.form-control(type='text', placeholder='Address')
 							.form-group
 								textarea#sms.form-control(placeholder='Nội dung', name="sms", cols="30", rows="5")
-
+		.row
+			.col
+				.form-group.text-center
+					button.btn.btn-outline-primary.text-uppercase(type="submit")
+						| Đăng ký

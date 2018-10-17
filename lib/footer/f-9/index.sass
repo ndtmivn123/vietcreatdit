@@ -3,25 +3,27 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-footer-9
-	background-color: darken(color-get($mau,trang) ,85%)
+.landingpage-footer-9
+	// background-color: darken(color-get($mau,trang) ,85%)
+	background-color: color-get($mau,den-1)
 	position: relative
 	z-index: 1
 	color: darken(color-get($mau,trang) ,40%)
-	+media-breakpoint-down(xs)
-		text-align: center
+	// +media-breakpoint-down(xs)
+	// 	text-align: center
 	h4
-		color: darken(color-get($mau,trang) ,80%)
+		color: darken(color-get($mau,trang) ,40%)
 		text-transform: uppercase
 		position: relative
 		+fz(1.2rem)
 		+fw(600)
 		margin-bottom: 1.5rem
-	.canhcam-sub
+	.landingpage-sub
 		+transform(translateY(-50%))
 		+pos(abs, 0 0 null null)
 		width: 100%
 		.sub
+			background-image: linear-gradient(to top, #f62e71 0%, #f9ab72 100%)
 			+pad(2rem 0)
 			label
 				text-transform: uppercase
@@ -86,6 +88,9 @@
 
 	.linkfooter
 		padding: 3rem 0
+		h4
+			img
+				max-width: 200px
 		+media-breakpoint-up(md)
 			+pad(4rem 0)
 		.list-group
@@ -94,14 +99,24 @@
 				+bg(none, none, none)
 				border: 0
 				+pad(.5rem 0)
-				white-space: nowrap
+				// white-space: nowrap
 				+media-breakpoint-up(md)
 					+pad(.15rem 0)
 				a
 					font-size: .9rem
 					+link(darken(color-get($mau,trang) ,40%),color-get($mau,main),color-get($mau,main))
+			.list-group-item.info
+				padding-left: 25px
+				i
+					position: absolute
+					left: 0
+					top: 7px
+					z-index: 0
+				p
+					display: inline
+					font-size: .9rem
 	.copyright
-		background: color-get($mau,trang)
+		background: color-get($mau,den-1)
 		+pad(1rem 0)
 		color: darken(color-get($mau,trang) ,30%)
 		.list-group
@@ -109,7 +124,7 @@
 				display: inline-block
 				+bg(none, none, none)
 				border: 0
-				white-space: nowrap
+				// white-space: nowrap
 				+pad(.5rem 0)
 				a
 					font-size: .9rem
