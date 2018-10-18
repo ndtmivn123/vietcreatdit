@@ -17,6 +17,17 @@
 			+fz(1.8rem)
 			+fw(600)
 			text-transform: uppercase
+			position: relative
+			&:before
+				display: inline-block
+				content: ''
+				width: 100px
+				height: 1px
+				background: color-get($mau,main)
+				bottom: 20%
+				left: 50%
+				position: absolute
+				transform: translateX(-50%)
 		.box-all
 			+pad(1rem)
 			.item

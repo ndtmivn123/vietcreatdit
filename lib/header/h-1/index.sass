@@ -14,6 +14,14 @@
 	.navbar-brand
 		img
 			max-height: 3.2rem
+	.navbar-nav
+		.nav-item
+			a
+				color: color-get($mau,den)
+				+fz(1.1rem)
+				+fw(500)
+				&:hover
+					color: color-get($mau,main)
 	&.expand
 		.navbar-toggler
 			background: color-get($mau,main)

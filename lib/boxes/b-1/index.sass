@@ -8,6 +8,26 @@
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
+	.h2-text
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
+		+pad(2rem)
+		+fz(1.8rem)
+		+fw(600)
+		text-transform: uppercase
+		position: relative
+		&:before
+			display: inline-block
+			content: ''
+			width: 100px
+			height: 1px
+			background: color-get($mau,main)
+			bottom: 20%
+			left: 50%
+			position: absolute
+			transform: translateX(-50%)
 	.boxes-details
 		background: color-get($mau,trang)
 		+bor-rad(.35rem)
